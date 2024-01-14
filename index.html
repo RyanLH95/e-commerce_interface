@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+      <meta charset="UTF-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <link rel="stylesheet" href="css/style.css" />
+      <link rel="icon" type="image/png" href="./favicon.png" />
+      <!--For live refresh-->
+      <script type="text/javascript" src="https://livejs.com/live.js"></script>
+      <!--lucide js dependencies-->
+      <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.js"></script>
+      <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.js"></script>
+      <script src="https://unpkg.com/lucide@latest"></script>
+      <!--glider js-->
+      <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/glider-js@1/glider.min.css">
+      <title>E-commerce</title>
+  </head>
+
+  <body>
+    <!-- Navigation bar-->
+    <div class="navbar">
+      <!--ecom logo-->
+      <div class="logo">
+        <span class="logoOne">E</span>
+        <span class="logoTwo">-com
+      </div>
+      <!--Nav buttons-->
+      <ul class="nav">
+        <li><a id="current-page" href="index.html">Home</a></li>
+        <li><a href="products/trainers/trainers.html">Trainers</a></li>
+        <li><a href="products/t-shirts/t-shirts.html">T-shirts</a></li>
+        <li><a href="products/sweatshirts/sweatshirts.html">Sweatshirts</a></li>
+        <li><a href="products/accessories/accessories.html">Accessories</a></li>
+      </ul>
+      <!--wishlist, addToCart and Login icons-->
+      <div class="navTwo">
+        <i data-lucide="heart" class="wishlist"></i>
+        <i data-lucide="shopping-cart" class="shoppingCart"></i>
+        <p class="login"><a href="">LOGIN</a></p>
+      </div>
+      <script>
+        lucide.createIcons();
+
+        window.onscroll = function() {myFunction()};
+
+var navbar = document.getElementById("navbar");
+var sticky = navbar.offsetTop;
+
+function myFunction() {
+  if (window.pageYOffset >= sticky) {
+    navbar.classList.add("sticky")
+  } else {
+    navbar.classList.remove("sticky");
+  }
+}
+      </script>
+    </div>
+    <!--Banner for ecom-->
+    <div class="banner">
+      <div class="glider-contain">
+        <div class="glider"> 
+          <div class="slider-one">
+            <img 
+              src="./images/slider/sliderone.png" 
+              alt="sliderone"
+              height="700"
+              width="1440"
+            >
+          </div>
+          <div class="slider-two">
+            <img 
+              src="./images/slider/sliderfour.png" 
+              alt="sliderfour"
+              height="700"
+              width="1442"
+              class="sliderFour"
+            >
+          </div>
+          <div>
+            <img 
+              src="./images/slider/sliderthree.png" 
+              alt="sliderthree"
+              height="700"
+              width="1442"
+              class="sliderThree"
+            >
+          </div>
+        </div>
+        <div role="tablist" id="dots"></div>
+        <div class="banner-title">
+          <h1>LATEST<br><br> FOOTWEAR | STREETWEAR</h1>
+        </div>
+      </div>
+      <script src="https://cdn.jsdelivr.net/npm/glider-js@1/glider.min.js"></script>
+      <script>
+        new Glider(document.querySelector('.glider'), {
+          type: 'carousel',
+          slidesToShow: 1,
+          autoplay: 8000,
+          dots: '#dots',
+          draggable: true,
+          arrows: {
+            prev: '.glider-prev',
+            next: '.glider-next'
+         }
+       });
+      </script>
+    <!--Contact Us banner-->
+    <div class="contact-banner">
+      <div class="contacts">
+        <div class="time">
+          <i data-lucide="clock" class="clock"></i>
+          <div>
+            <p>Saturday - Thursday</p>
+            <p>7:00 - 20:00</p>
+          </div>
+        </div>
+        <div class="contact">
+          <i data-lucide="smartphone" class="phone"></i>
+          <div>
+            <p>Customer Care</p>
+            <p>+44 0000 000 000</p>
+          </div>
+        </div>
+        <div class="location">
+          <i data-lucide="map" class="map"></i>
+          <div>
+            <p>London, England</p>
+          </div>
+        </div>
+        <div class="email-contact">
+          <i data-lucide="mail-plus" class="email"></i>
+          <div>
+            <p>Get an Invoice</p>
+            <p>Email Us</p>
+          </div>
+        </div>
+      </div>
+      <script>
+        lucide.createIcons();
+      </script>
+    </div>
+
+    <!--products-->
+    <div class="products">
+      <h3 class="product-title">Featured Products</h3>
+      <!--Row One of products-->
+      <div class="rowOne">
+        <div class="product product-one" id="101">
+          <a href="./products/trainers/productPage/101.html">
+            <img src="./images/trainers/adidas_originals_as_520.png" alt="" height="200" width="300">
+            <h3 class="title">Adidas Original AS 520</h3>
+            <div class="lower-product">
+              <p class="price">£85.00</p>
+              <button class="add-to-cart">ADD TO CART</button>
+            </div>
+          </a>
+        </div>
+        <div class="product product-two" id="102">
+          <a href="./products/trainers/productPage/102.html">
+            <img src="./images/trainers/adidas_originals_zx_750.png" alt="" height="200" width="300">
+            <h3 class="title">Adidas Original ZX 750</h3>
+            <div class="lower-product">
+              <p class="price">£85.00</p>
+              <button class="add-to-cart">ADD TO CART</button>
+            </div>
+          </a>
+        </div>
+        <div class="product product-three" id="103">
+          <a href="./products/trainers/productPage/103.html">
+            <img src="./images/trainers/adidas_originals_zx_750_brown.png" alt="" height="200" width="300">
+            <h3 class="title">Adidas Original ZX 750</h3>
+            <div class="lower-product">
+              <p class="price">£85.00</p>
+              <button class="add-to-cart">ADD TO CART</button>
+          </div>
+          </a>
+        </div>
+        <div class="product product-four" id="104">
+          <a href="./products/trainers/productPage/104.html">
+            <img src="./images/trainers/adidas_runfalcon_30_shoes.png" alt="" height="200" width="300">
+            <h3 class="title">Adidas Original ZX 750</h3>
+            <div class="lower-product">
+              <p class="price">£85.00</p>
+              <button class="add-to-cart">ADD TO CART</button>
+            </div>
+          </a>
+        </div>    
+      </div>
+
+      <!--Row two of products-->
+      <div class="rowTwo">
+        <div class="product product-one" id="105">
+          <a href="./products/trainers/productPage/105.html">
+            <img src="./images/trainers/nike_air_force_1.png" alt="" height="200" width="300">
+            <h3 class="title">Nike Air Force 1 White</h3>
+            <div class="lower-product">
+              <p class="price">£109.95</p>
+              <button class="add-to-cart">ADD TO CART</button>
+            </div>
+          </a>
+        </div>
+        <div class="product product-two" id="106">
+          <a href="./products/trainers/productPage/106.html">
+            <img src="./images/trainers/nike_air_force_1_black.png" alt="" height="200" width="300">
+            <h3 class="title">Nike Air Force 1 Black</h3>
+            <div class="lower-product">
+              <p class="price">£115.00</p>
+              <button class="add-to-cart">ADD TO CART</button>
+            </div>
+          </a>
+        </div>
+        <div class="product product-three" id="107">
+          <a href="./products/trainers/productPage/107.html">
+            <img src="./images/trainers/nike_air_force_1_blackandwhite.png" alt="" height="200" width="300">
+            <h3 class="title">Nike Air Force 1 Black / White</h3>
+            <div class="lower-product">
+              <p class="price">£110.00</p>
+              <button class="add-to-cart">ADD TO CART</button>
+            </div>
+          </a>
+        </div>
+        <div class="product product-four" id="108">
+          <a href="./products/trainers/productPage/108.html">
+            <img src="./images/trainers/nike_dunk_low.jpeg" alt="" height="200" width="300">
+            <h3 class="title">Nike Dunk Low</h3>
+            <div class="lower-product">
+              <p class="price">£110.00</p>
+              <button class="add-to-cart">ADD TO CART</button>
+            </div>
+          </a>
+        </div>    
+      </div>
+
+      <!--Row three of products-->
+      <div class="rowThree">
+        <div class="product product-one" id="113">
+          <a href="./products/trainers/productPage/113.html">
+            <img src="./images/trainers/new_balance_2002r.png" alt="" height="200" width="300">
+            <h3 class="title">New Balance 2002R</h3>
+            <div class="lower-product">
+              <p class="price">£130.00</p>
+              <button class="add-to-cart">ADD TO CART</button>
+            </div>
+          </a>
+        </div>
+        <div class="product product-two" id="114">
+          <a href="./products/trainers/productPage/114.html">
+            <img src="./images/trainers/new_balance_327.png" alt="" height="200" width="300">
+            <h3 class="title">New Balance 327</h3>
+            <div class="lower-product">
+              <p class="price">£110.00</p>
+              <button class="add-to-cart">ADD TO CART</button>
+            </div>
+          </a>
+        </div>
+        <div class="product product-three" id="115">
+          <a href="./products/trainers/productPage/115.html">
+            <img src="./images/trainers/emporio_armani_ea7b&w_20.png" alt="" height="200" width="300">
+            <h3 class="title">Emporio Armani EA7 B&W 2.0</h3>
+            <div class="lower-product">
+              <p class="price">£160.00</p>
+              <button class="add-to-cart">ADD TO CART</button>
+            </div>
+          </a>
+        </div>
+        <div class="product product-four" id="116">
+          <a href="./products/trainers/productPage/116.html">
+            <img src="./images/trainers/emporio_armani_ea7b&w_laces.png" alt="" height="200" width="300">
+            <h3 class="title">Emporio Armani EA7 B&W Laces</h3>
+            <div class="lower-product">
+              <p class="price">£180.00</p>
+              <button class="add-to-cart">ADD TO CART</button>
+            </div>
+          </a>
+        </div>    
+      </div>
+
+      <!--Footer-->
+      <div class="footer">
+        <div class="footer-container">
+          <!--contact content-->
+          <div class="contact-container">
+            <a href="mailto: ryan-henry@hotmail.co.uk"><i data-lucide="at-sign" class="icon" id="my-email"></i></a>
+            <a href="https://www.linkedin.com/in/ryan-henry-17004a12b/"><i data-lucide="linkedin" class="icon" id="linkedin"></i></a>
+            <a href="https://github.com/RyanLH95"><i data-lucide="github" class="icon" id="github"></i></a>
+          </div>
+          <script>
+            lucide.createIcons();
+          </script>
+          <!--customer content-->
+          <div class="contain">
+            <div class="customer-care">
+              <h3>Customer Care</h3>
+              <p>Delivery and Returns</p>
+              <p>Help & Contact Us</p>
+              <p>Track My Order</p>
+            </div>
+            <div class="corporate">
+              <h3>Corporate</h3>
+              <p>Jobs</p>
+            </div>
+            <div class="legal">
+              <h3>Legal</h3>
+              <p>Terms & Conditions</p>
+              <p>Privacy & Cookies</p>
+              <p>Accessibility</p>
+              <p>Cookie Settings</p>
+              <p>Site Map</p>
+            </div>
+            <div class="guide">
+              <h3>Shopping Guide</h3>
+              <p>Students</p>
+              <p>Size Guides</p>
+              <p>Find a Store</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,285 @@
+<main>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/style.css" />
+    <link rel="icon" type="image/png" href="./favicon.png" />
+    <sript defer src="../app.js"></sript>
+    <!--For live refresh-->
+    <script type="text/javascript" src="https://livejs.com/live.js"></script>
+    <!--lucide js dependencies-->
+    <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.js"></script>
+    <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.js"></script>
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <!--glider js-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/glider-js@1/glider.min.css">
+    <title>E-commerce</title>
+  </head>
+  
+  <body>
+    <!-- Navigation bar-->
+    <div class="navbar">
+      <!--ecom logo-->
+      <div class="logo">
+        <span class="logoOne">E</span>
+        <span class="logoTwo">-com
+      </div>
+      <!--Nav buttons-->
+      <ul class="nav">
+        <li><a href="/index.html">Home</a></li>
+        <li><a href="/products/trainers/trainers.html">Trainers</a></li>
+        <li><a href="/products/t-shirts/t-shirts.html">T-shirts</a></li>
+        <li><a href="/products/sweatshirts/sweatshirts.html">Sweatshirts</a></li>
+        <li><a id="current-page" href="accessories.html">Accessories</a></li>
+      </ul>
+      <!--wishlist, addToCart and Login icons-->
+      <div class="navTwo">
+        <i data-lucide="heart" class="wishlist"></i>
+        <i data-lucide="shopping-cart" class="shoppingCart"></i>
+        <p class="login"><a href="">LOGIN</a></p>
+      </div>
+      <script>
+        lucide.createIcons();
+  
+        window.onscroll = function() {myFunction()};
+  
+        var navbar = document.getElementById("navbar");
+        var sticky = navbar.offsetTop;
+  
+        function myFunction() {
+          if (window.pageYOffset >= sticky) {
+            navbar.classList.add("sticky")
+          } else {
+            navbar.classList.remove("sticky");
+          }
+        }
+      </script>
+    </div>
+
+    <!--products-->
+    <div class="accessories-products">
+    <h3 class="product-title">LATEST ACCESSORIES</h3>
+
+    <!--Row One of products-->
+    <div class="rowOne">
+      <div class="product product-one" id="401">
+        <a href="../accessories/productPage/401.html">
+          <img src="/images/accessories/new_era_mlb_new_york_yankees_9fifty_snapback_cap.png" alt="" height="350" width="300">
+          <h3 class="title">MLB New York Yankees Snapback</h3>
+          <div class="lower-product">
+            <p class="price">£32.00</p>
+            <button class="add-to-cart">ADD TO CART</button>
+          </div>
+        </a>
+      </div>
+      <div class="product product-two" id="402">
+        <a href="../accessories/productPage/402.html">
+          <img src="/images/accessories/new_era_mlb_la_dodgers_940_cap.png" alt="" height="350" width="300">
+          <h3 class="title">MLB LA Dodgers 940 Snapback</h3>
+          <div class="lower-product">
+            <p class="price">£35.00</p>
+            <button class="add-to-cart">ADD TO CART</button>
+          </div>
+        </a>
+      </div>
+      <div class="product product-three" id="403">
+        <a href="../accessories/productPage/403.html">
+          <img src="/images/accessories/boss_zed_cap.png" alt="" height="350" width="300">
+          <h3 class="title">BOSS Zed Cap</h3>
+          <div class="lower-product">
+            <p class="price">£35.00</p>
+            <button class="add-to-cart">ADD TO CART</button>
+          </div>
+        </a>
+      </div>
+      <div class="product product-four" id="404">
+        <a href="../accessories/productPage/404.html">
+          <img src="/images/accessories/the_north_face_66_classic_cap.png" alt="" height="350" width="300">
+          <h3 class="title">The North Face 66 Classic Cap</h3>
+          <div class="lower-product">
+            <p class="price">£27.00</p>
+            <button class="add-to-cart">ADD TO CART</button>
+          </div>
+        </a>
+      </div>    
+    </div>
+
+    <!--Row One of products-->
+    <div class="rowTwo">
+      <div class="product product-one" id="405">
+        <a href="../accessories/productPage/405.html">
+          <img src="/images/accessories/new_era_mlb_new_york_yankees_snapback_trucker_cap.png" alt="" height="350" width="300">
+          <h3 class="title">MLB New York Yankees Trucker Cap</h3>
+          <div class="lower-product">
+            <p class="price">£28.00</p>
+            <button class="add-to-cart">ADD TO CART</button>
+          </div>
+        </a>
+      </div>
+      <div class="product product-two" id="406">
+        <a href="../accessories/productPage/406.html">
+          <img src="/images/accessories/new_era_mlb_la_dodgers_40th_anniversary_59fifty_cap.png" alt="" height="350" width="300">
+          <h3 class="title">MLB LA Dodgers 59FIFTY Snapback</h3>
+          <div class="lower-product">
+            <p class="price">£35.00</p>
+            <button class="add-to-cart">ADD TO CART</button>
+          </div>
+        </a>
+      </div>
+      <div class="product product-three" id="407">
+        <a href="../accessories/productPage/407.html">
+          <img src="/images/accessories/under_armour_golf_96_cap.png" alt="" height="350" width="300">
+          <h3 class="title">Under Armour 96 Cap</h3>
+          <div class="lower-product">
+            <p class="price">£26.00</p>
+            <button class="add-to-cart">ADD TO CART</button>
+          </div>
+        </a>
+      </div>
+      <div class="product product-four" id="408">
+        <a href="../accessories/productPage/408.html">
+          <img src="/images/accessories/adidas_adi_dassler_cap.png" alt="" height="350" width="300">
+          <h3 class="title">adidas Adi Dassler Cap</h3>
+          <div class="lower-product">
+            <p class="price">£23.00</p>
+            <button class="add-to-cart">ADD TO CART</button>
+          </div>
+        </a>
+      </div>    
+    </div>
+
+    <!--Row Two of products-->
+    <div class="rowThree">
+      <div class="product product-one" id="409">
+        <a href="../accessories/productPage/409.html">
+          <img src="/images/accessories/jordan_pencil_case_backpack.png" alt="" height="350" width="300">
+          <h3 class="title">Jordan Pencil Case Backpack</h3>
+          <div class="lower-product">
+            <p class="price">£30.00</p>
+            <button class="add-to-cart">ADD TO CART</button>
+          </div>
+        </a>
+      </div>
+      <div class="product product-two" id="410">
+        <a href="../accessories/productPage/410.html">
+          <img src="/images/accessories/nike_elemental_backpack.png" alt="" height="350" width="300">
+          <h3 class="title">Nike Elemental Backpack</h3>
+          <div class="lower-product">
+            <p class="price">£28.00</p>
+            <button class="add-to-cart">ADD TO CART</button>
+          </div>
+        </a>
+      </div>
+      <div class="product product-three" id="411">
+        <a href="../accessories/productPage/411.html">
+          <img src="/images/accessories/adidas_essentials_duffel_bag.png" alt="" height="350" width="300">
+          <h3 class="title">adidas Essentials Duffel Bag</h3>
+          <div class="lower-product">
+            <p class="price">£30.00</p>
+            <button class="add-to-cart">ADD TO CART</button>
+          </div>
+        </a>
+      </div>
+      <div class="product product-four" id="412">
+        <a href="../accessories/productPage/412.html">
+          <img src="/images/accessories/nike_brasilia_bag.png" alt="" height="350" width="300">
+          <h3 class="title">Nike Brasilia Bag</h3>
+          <div class="lower-product">
+            <p class="price">£33.00</p>
+            <button class="add-to-cart">ADD TO CART</button>
+          </div>
+        </a>
+      </div>    
+    </div>
+
+    <!--Row Four of products-->
+    <div class="rowFour">
+      <div class="product product-one" id="413">
+        <a href="../accessories/productPage/413.html">
+          <img src="/images/accessories/jordan_monogram_backpack.png" alt="" height="350" width="300">
+          <h3 class="title">Jordan Monogram Backpack</h3>
+          <div class="lower-product">
+            <p class="price">£100.00</p>
+            <button class="add-to-cart">ADD TO CART</button>
+          </div>
+        </a>
+      </div>
+      <div class="product product-two" id="414">
+        <a href="../accessories/productPage/414.html">
+          <img src="/images/accessories/adidas_originals_adicolor_classic_mini_airliner_bag.png" alt="" height="350" width="300">
+          <h3 class="title">adidas Originals Airliner Bag</h3>
+          <div class="lower-product">
+            <p class="price">£28.00</p>
+            <button class="add-to-cart">ADD TO CART</button>
+          </div>
+        </a>
+      </div>
+      <div class="product product-three" id="415">
+        <a href="../accessories/productPage/415.html">
+          <img src="/images/accessories/adidas_prime_backpack.png" alt="" height="350" width="300">
+          <h3 class="title">adidas Prime Backpack</h3>
+          <div class="lower-product">
+            <p class="price">£35.00</p>
+            <button class="add-to-cart">ADD TO CART</button>
+          </div>
+        </a>
+      </div>
+      <div class="product product-four" id="416">
+        <a href="../accessories/productPage/416.html">
+          <img src="/images/accessories/adidas_originals_adicolor_classic_round_bag.png" alt="" height="350" width="300">
+          <h3 class="title">adidas Originals Classic Round Bag</h3>
+          <div class="lower-product">
+            <p class="price">£25.00</p>
+            <button class="add-to-cart">ADD TO CART</button>
+          </div>
+        </a>
+      </div>    
+    </div>
+    
+    <!--Footer-->
+    <div class="footer">
+      <div class="footer-container">
+        <!--contact content-->
+        <div class="contact-container">
+          <a href="mailto: ryan-henry@hotmail.co.uk"><i data-lucide="at-sign" class="icon" id="my-email"></i></a>
+          <a href="https://www.linkedin.com/in/ryan-henry-17004a12b/"><i data-lucide="linkedin" class="icon" id="linkedin"></i></a>
+          <a href="https://github.com/RyanLH95"><i data-lucide="github" class="icon" id="github"></i></a>
+        </div>
+        <script>
+          lucide.createIcons();
+        </script>
+        <!--customer content-->
+        <div class="contain">
+          <div class="customer-care">
+            <h3>Customer Care</h3>
+            <p>Delivery and Returns</p>
+            <p>Help & Contact Us</p>
+            <p>Track My Order</p>
+          </div>
+          <div class="corporate">
+            <h3>Corporate</h3>
+            <p>Jobs</p>
+          </div>
+          <div class="legal">
+            <h3>Legal</h3>
+            <p>Terms & Conditions</p>
+            <p>Privacy & Cookies</p>
+            <p>Accessibility</p>
+            <p>Cookie Settings</p>
+            <p>Site Map</p>
+          </div>
+          <div class="guide">
+            <h3>Shopping Guide</h3>
+            <p>Students</p>
+            <p>Size Guides</p>
+            <p>Find a Store</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+
+</html>
+</main>

@@ -1,0 +1,285 @@
+<main>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/style.css" />
+    <link rel="icon" type="image/png" href="./favicon.png" />
+    <sript defer src="../app.js"></sript>
+    <!--For live refresh-->
+    <script type="text/javascript" src="https://livejs.com/live.js"></script>
+    <!--lucide js dependencies-->
+    <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.js"></script>
+    <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.js"></script>
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <!--glider js-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/glider-js@1/glider.min.css">
+    <title>E-commerce</title>
+  </head>
+  
+  <body>
+    <!-- Navigation bar-->
+    <div class="navbar">
+      <!--ecom logo-->
+      <div class="logo">
+        <span class="logoOne">E</span>
+        <span class="logoTwo">-com
+      </div>
+      <!--Nav buttons-->
+      <ul class="nav">
+        <li><a href="/index.html">Home</a></li>
+        <li><a href="/products/trainers/trainers.html">Trainers</a></li>
+        <li><a id="current-page" href="t-shirts.html">T-shirts</a></li>
+        <li><a href="/products/sweatshirts/sweatshirts.html">Sweatshirts</a></li>
+        <li><a href="/products/accessories/accessories.html">Accessories</a></li>
+      </ul>
+      <!--wishlist, addToCart and Login icons-->
+      <div class="navTwo">
+        <i data-lucide="heart" class="wishlist"></i>
+        <i data-lucide="shopping-cart" class="shoppingCart"></i>
+        <p class="login"><a href="">LOGIN</a></p>
+      </div>
+      <script>
+        lucide.createIcons();
+  
+        window.onscroll = function() {myFunction()};
+  
+        var navbar = document.getElementById("navbar");
+        var sticky = navbar.offsetTop;
+  
+        function myFunction() {
+          if (window.pageYOffset >= sticky) {
+            navbar.classList.add("sticky")
+          } else {
+            navbar.classList.remove("sticky");
+          }
+        }
+      </script>
+    </div>
+
+    <!--products-->
+    <div class="t-shirt-products">
+    <h3 class="product-title">LATEST T-SHIRTS</h3>
+
+    <!--Row One of products-->
+    <div class="rowOne">
+      <div class="product product-one" id="201">
+        <a href="../t-shirts/productPage/201.html">
+          <img src="/images/t-shirts/adidas_badge_of_sport_fade_t-shirt.png" alt="" height="350" width="300">
+          <h3 class="title">Adidas Badge of Sport Fade T-Shirt</h3>
+          <div class="lower-product">
+            <p class="price">£23.00</p>
+            <button class="add-to-cart">ADD TO CART</button>
+          </div>
+        </a>
+      </div>
+      <div class="product product-two" id="202">
+        <a href="../t-shirts/productPage/202.html">
+          <img src="/images/t-shirts/billionaire_boys_club_small_arch_logo_t-shirt.png" alt="" height="350" width="300">
+          <h3 class="title">Billionaire Boys Club Logo T-Shirt</h3>
+          <div class="lower-product">
+            <p class="price">£55.00</p>
+            <button class="add-to-cart">ADD TO CART</button>
+          </div>
+        </a>
+      </div>
+      <div class="product product-three" id="203">
+        <a href="../t-shirts/productPage/203.html">
+          <img src="/images/t-shirts/columbia_leyburn_t-shirt.png" alt="" height="350" width="300">
+          <h3 class="title">Columbia Leyburn T-Shirts</h3>
+          <div class="lower-product">
+            <p class="price">£25.00</p>
+            <button class="add-to-cart">ADD TO CART</button>
+          </div>
+        </a>
+      </div>
+      <div class="product product-four" id="204">
+        <a href="../t-shirts/productPage/204.html">
+          <img src="/images/t-shirts/the_north_face_gradient_box_t-shirt.png" alt="" height="350" width="300">
+          <h3 class="title">The North Face Gradient Box T-Shirt</h3>
+          <div class="lower-product">
+            <p class="price">£35.00</p>
+            <button class="add-to-cart">ADD TO CART</button>
+          </div>
+        </a>
+      </div>    
+    </div>
+   
+    <!--Row Two of Products-->
+    <div class="rowTwo">
+      <div class="product product-one" id="205">
+        <a href="../t-shirts/productPage/205.html">
+          <img src="/images/t-shirts/billionaire_boys_club_small_arch_logo_t-shirt_black.png" alt="" height="350" width="300">
+          <h3 class="title">Billionaire Boys Club Logo T-Shirt</h3>
+          <div class="lower-product">
+            <p class="price">£23.00</p>
+            <button class="add-to-cart">ADD TO CART</button>
+          </div>
+        </a>
+      </div>
+      <div class="product product-two" id="206">
+        <a href="../t-shirts/productPage/206.html">
+          <img src="/images/t-shirts/the_north_face_gradient_box_t-shirt_grey.png" alt="" height="350" width="300">
+          <h3 class="title">The North Face Gradient Box T-Shirt</h3>
+          <div class="lower-product">
+            <p class="price">£35.00</p>
+            <button class="add-to-cart">ADD TO CART</button>
+          </div>
+        </a>
+      </div>
+      <div class="product product-three" id="207">
+        <a href="../t-shirts/productPage/207.html">
+          <img src="/images/t-shirts/fred_perry_twin_tip_long_sleeve_t-shirt.png" alt="" height="350" width="300">
+          <h3 class="title">Fred Perry Long Sleeve T-Shirt</h3>
+          <div class="lower-product">
+            <p class="price">£55.00</p>
+            <button class="add-to-cart">ADD TO CART</button>
+          </div>
+        </a>
+      </div>
+      <div class="product product-four" id="208">
+        <a href="../t-shirts/productPage/208.html">
+          <img src="/images/t-shirts/nike_core_t-shirt.png" alt="" height="350" width="300">
+          <h3 class="title">Nike Core T-Shirt</h3>
+          <div class="lower-product">
+            <p class="price">£23.00</p>
+            <button class="add-to-cart">ADD TO CART</button>
+          </div>
+        </a>
+      </div>    
+    </div>
+
+    <!--Row Three of Products-->
+    <div class="rowThree">
+      <div class="product product-one" id="209">
+        <a href="../t-shirts/productPage/209.html">
+          <img src="/images/t-shirts/adidas_badge_of_sport_fade_t-shirt_white.png" alt="" height="350" width="300">
+          <h3 class="title">adidas Badge of Sport Fade T-Shirt</h3>
+          <div class="lower-product">
+            <p class="price">£28.00</p>
+            <button class="add-to-cart">ADD TO CART</button>
+          </div>
+        </a>
+      </div>
+      <div class="product product-two" id="210">
+        <a href="../t-shirts/productPage/210.html">
+          <img src="/images/t-shirts/nike_sportswear_graphic_t-shirt.png" alt="" height="350" width="300">
+          <h3 class="title">Nike Sportswear Graphic T-Shirt</h3>
+          <div class="lower-product">
+            <p class="price">£30.00</p>
+            <button class="add-to-cart">ADD TO CART</button>
+          </div>
+        </a>
+      </div>
+      <div class="product product-three" id="211">
+        <a href="../t-shirts/productPage/211.html">
+          <img src="/images/t-shirts/jordan_jumpman_flight_t-shirt.png" alt="" height="350" width="300">
+          <h3 class="title">Jordan Jumpman Flight T-Shirt</h3>
+          <div class="lower-product">
+            <p class="price">£33.00</p>
+            <button class="add-to-cart">ADD TO CART</button>
+          </div>
+        </a>
+      </div>
+      <div class="product product-four" id="212">
+        <a href="../t-shirts/productPage/212.html">
+          <img src="/images/t-shirts/columbia_amble_t-shirt.png" alt="" height="350" width="300">
+          <h3 class="title">Columbia Amble T-Shirt</h3>
+          <div class="lower-product">
+            <p class="price">£25.00</p>
+            <button class="add-to-cart">ADD TO CART</button>
+          </div>
+        </a>
+      </div>    
+    </div>
+  
+    <!--Row Four of Products-->
+    <div class="rowFour">
+      <div class="product product-one" id="213">
+        <a href="../t-shirts/productPage/213.html">
+          <img src="/images/t-shirts/nike_nba_la_lakers_m90_courtside_t-shirt.png" alt="" height="350" width="300">
+          <h3 class="title">Nike NBA LA Lakers T-Shirt</h3>
+          <div class="lower-product">
+            <p class="price">£38.00</p>
+            <button class="add-to-cart">ADD TO CART</button>
+          </div>
+        </a>
+      </div>
+      <div class="product product-two" id="214">
+        <a href="../t-shirts/productPage/214.html">
+          <img src="/images/t-shirts/mercier_mono_t-shirt.png" alt="" height="350" width="300">
+          <h3 class="title">MERCIER Mono T-Shirt</h3>
+          <div class="lower-product">
+            <p class="price">£30.00</p>
+            <button class="add-to-cart">ADD TO CART</button>
+          </div>
+        </a>
+      </div>
+      <div class="product product-three" id="215">
+        <a href="../t-shirts/productPage/215.html">
+          <img src="/images/t-shirts/the_north_face_box_notes_t-shirt.png" alt="" height="350" width="300">
+          <h3 class="title">The North Face Box Notes T-Shirt</h3>
+          <div class="lower-product">
+            <p class="price">£35.00</p>
+            <button class="add-to-cart">ADD TO CART</button>
+          </div>
+        </a>
+      </div>
+      <div class="product product-four" id="216">
+        <a href="../t-shirts/productPage/216.html">
+          <img src="/images/t-shirts/adidas_originals_script_t-shirt.png" alt="" height="350" width="300">
+          <h3 class="title">adidas Originals Script T-Shirt</h3>
+          <div class="lower-product">
+            <p class="price">£28.00</p>
+            <button class="add-to-cart">ADD TO CART</button>
+          </div>
+        </a>
+      </div>    
+    </div>
+    
+    <!--Footer-->
+    <div class="footer">
+      <div class="footer-container">
+        <!--contact content-->
+        <div class="contact-container">
+          <a href="mailto: ryan-henry@hotmail.co.uk"><i data-lucide="at-sign" class="icon" id="my-email"></i></a>
+          <a href="https://www.linkedin.com/in/ryan-henry-17004a12b/"><i data-lucide="linkedin" class="icon" id="linkedin"></i></a>
+          <a href="https://github.com/RyanLH95"><i data-lucide="github" class="icon" id="github"></i></a>
+        </div>
+        <script>
+          lucide.createIcons();
+        </script>
+        <!--customer content-->
+        <div class="contain">
+          <div class="customer-care">
+            <h3>Customer Care</h3>
+            <p>Delivery and Returns</p>
+            <p>Help & Contact Us</p>
+            <p>Track My Order</p>
+          </div>
+          <div class="corporate">
+            <h3>Corporate</h3>
+            <p>Jobs</p>
+          </div>
+          <div class="legal">
+            <h3>Legal</h3>
+            <p>Terms & Conditions</p>
+            <p>Privacy & Cookies</p>
+            <p>Accessibility</p>
+            <p>Cookie Settings</p>
+            <p>Site Map</p>
+          </div>
+          <div class="guide">
+            <h3>Shopping Guide</h3>
+            <p>Students</p>
+            <p>Size Guides</p>
+            <p>Find a Store</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+
+</html>
+</main>

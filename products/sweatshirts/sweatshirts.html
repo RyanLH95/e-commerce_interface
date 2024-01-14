@@ -1,0 +1,285 @@
+<main>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/style.css" />
+    <link rel="icon" type="image/png" href="./favicon.png" />
+    <sript defer src="../app.js"></sript>
+    <!--For live refresh-->
+    <script type="text/javascript" src="https://livejs.com/live.js"></script>
+    <!--lucide js dependencies-->
+    <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.js"></script>
+    <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.js"></script>
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <!--glider js-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/glider-js@1/glider.min.css">
+    <title>E-commerce</title>
+  </head>
+  
+  <body>
+    <!-- Navigation bar-->
+    <div class="navbar">
+      <!--ecom logo-->
+      <div class="logo">
+        <span class="logoOne">E</span>
+        <span class="logoTwo">-com
+      </div>
+      <!--Nav buttons-->
+      <ul class="nav">
+        <li><a href="/index.html">Home</a></li>
+        <li><a href="/products/trainers/trainers.html">Trainers</a></li>
+        <li><a href="/products/t-shirts/t-shirts.html">T-shirts</a></li>
+        <li><a id="current-page" href="sweatshirts.html">Sweatshirts</a></li>
+        <li><a href="/products/accessories/accessories.html">Accessories</a></li>
+      </ul>
+      <!--wishlist, addToCart and Login icons-->
+      <div class="navTwo">
+        <i data-lucide="heart" class="wishlist"></i>
+        <i data-lucide="shopping-cart" class="shoppingCart"></i>
+        <p class="login"><a href="">LOGIN</a></p>
+      </div>
+      <script>
+        lucide.createIcons();
+  
+        window.onscroll = function() {myFunction()};
+  
+        var navbar = document.getElementById("navbar");
+        var sticky = navbar.offsetTop;
+  
+        function myFunction() {
+          if (window.pageYOffset >= sticky) {
+            navbar.classList.add("sticky")
+          } else {
+            navbar.classList.remove("sticky");
+          }
+        }
+      </script>
+    </div>
+
+    <!--products-->
+    <div class="sweatshirt-products">
+    <h3 class="product-title">LATEST SWEATSHIRTS</h3>
+
+    <!--Row One of products-->
+    <div class="rowOne">
+      <div class="product product-one" id="301">
+        <a href="../sweatshirts/productPage/301.html">
+          <img src="/images/sweatshirts/adidas_originals_trefoil_essential_crew_sweatshirt.png" alt="" height="350" width="300">
+          <h3 class="title">adidas Originals Essential Sweatshirt</h3>
+          <div class="lower-product">
+            <p class="price">£50.00</p>
+            <button class="add-to-cart">ADD TO CART</button>
+          </div>
+        </a>
+      </div>
+      <div class="product product-two" id="302">
+        <a href="../sweatshirts/productPage/302.html">
+          <img src="/images/sweatshirts/adidas_sweatshirt_black.png" alt="" height="350" width="300">
+          <h3 class="title">adidas Originals Essential Sweatshirt</h3>
+          <div class="lower-product">
+            <p class="price">£50.00</p>
+            <button class="add-to-cart">ADD TO CART</button>
+          </div>
+        </a>
+      </div>
+      <div class="product product-three" id="303">
+        <a href="../sweatshirts/productPage/303.html">
+          <img src="/images/sweatshirts/nike_foundation_crew_sweatshirt.png" alt="" height="350" width="300">
+          <h3 class="title">Nike Foundation Crew Sweatshirt</h3>
+          <div class="lower-product">
+            <p class="price">£55.00</p>
+            <button class="add-to-cart">ADD TO CART</button>
+          </div>
+        </a>
+      </div>
+      <div class="product product-four" id="304">
+        <a href="../sweatshirts/productPage/304.html">
+          <img src="/images/sweatshirts/new_balance_arch_logo_sweatshirt_cream.png" alt="" height="350" width="300">
+          <h3 class="title">New Balance Arch Logo Sweatshirt</h3>
+          <div class="lower-product">
+            <p class="price">£55.00</p>
+            <button class="add-to-cart">ADD TO CART</button>
+          </div>
+        </a>
+      </div>    
+    </div>
+
+    <!--Row two of products-->
+    <div class="rowTwo">
+      <div class="product product-one" id="305">
+        <a href="../sweatshirts/productPage/305.html">
+          <img src="/images/sweatshirts/new_balance_arch_logo_sweatshirt.png" alt="" height="350" width="300">
+          <h3 class="title">New Balance Arch Logo Sweatshirt</h3>
+          <div class="lower-product">
+            <p class="price">£55.00</p>
+            <button class="add-to-cart">ADD TO CART</button>
+          </div>
+        </a>
+      </div>
+      <div class="product product-two" id="306">
+        <a href="../sweatshirts/productPage/306.html">
+          <img src="/images/sweatshirts/the_north_face_tape_crew_sweatshirt.png" alt="" height="350" width="300">
+          <h3 class="title">The North Face Crew Sweatshirt</h3>
+          <div class="lower-product">
+            <p class="price">£75.00</p>
+            <button class="add-to-cart">ADD TO CART</button>
+          </div>
+        </a>
+      </div>
+      <div class="product product-three" id="307">
+        <a href="../sweatshirts/productPage/307.html">
+          <img src="/images/sweatshirts/nike_foundation_crew_sweatshirt_blue.png" alt="" height="350" width="300">
+          <h3 class="title">Nike Foundation Crew Sweatshirt</h3>
+          <div class="lower-product">
+            <p class="price">£55.00</p>
+            <button class="add-to-cart">ADD TO CART</button>
+          </div>
+        </a>
+      </div>
+      <div class="product product-four" id="308">
+        <a href="../sweatshirts/productPage/308.html">
+          <img src="/images/sweatshirts/the_north_face_fine_box_crew_sweatshirt.png" alt="" height="350" width="300">
+          <h3 class="title">The North Face Crew Sweatshirt</h3>
+          <div class="lower-product">
+            <p class="price">£70.00</p>
+            <button class="add-to-cart">ADD TO CART</button>
+          </div>
+        </a>
+      </div>    
+    </div>
+
+    <!--Row three of products-->
+    <div class="rowThree">
+      <div class="product product-one" id="309">
+        <a href="../sweatshirts/productPage/309.html">
+          <img src="/images/sweatshirts/mckenzie_rain_poly_crew_sweatshirt.png" alt="" height="350" width="300">
+          <h3 class="title">McKenzie Rain Poly Crew Sweatshirt</h3>
+          <div class="lower-product">
+            <p class="price">£32.00</p>
+            <button class="add-to-cart">ADD TO CART</button>
+          </div>
+        </a>
+      </div>
+      <div class="product product-two" id="310">
+        <a href="../sweatshirts/productPage/310.html">
+          <img src="/images/sweatshirts/fred_perry_twin_tipped_half_zip_sweatshirt.png" alt="" height="350" width="300">
+          <h3 class="title">Fred Perry Half Zip Sweatshirt</h3>
+          <div class="lower-product">
+            <p class="price">£95.00</p>
+            <button class="add-to-cart">ADD TO CART</button>
+          </div>
+        </a>
+      </div>
+      <div class="product product-three" id="311">
+        <a href="../sweatshirts/productPage/311.html">
+          <img src="/images/sweatshirts/new_balance_polar_1:4_zip_fleece.png" alt="" height="350" width="300">
+          <h3 class="title">New Balance Polar Zip Fleece</h3>
+          <div class="lower-product">
+            <p class="price">£70.00</p>
+            <button class="add-to-cart">ADD TO CART</button>
+          </div>
+        </a>
+      </div>
+      <div class="product product-four" id="312">
+        <a href="../sweatshirts/productPage/312.html">
+          <img src="/images/sweatshirts/adidas_originals_polar_fleece_1:2_zip_sweatshirt.png" alt="" height="350" width="300">
+          <h3 class="title">adidas Originals Polar Zip Fleece</h3>
+          <div class="lower-product">
+            <p class="price">£65.00</p>
+            <button class="add-to-cart">ADD TO CART</button>
+          </div>
+        </a>
+      </div>    
+    </div>
+
+    <!--Row four of products-->
+    <div class="rowFour">
+      <div class="product product-one" id="313">
+        <a href="../sweatshirts/productPage/313.html">
+          <img src="/images/sweatshirts/emporio_armani_ea7_tape_crew_sweatshirt.png" alt="" height="350" width="300">
+          <h3 class="title">Emporio Armani EA7 Crew Sweatshirt</h3>
+          <div class="lower-product">
+            <p class="price">£100.00</p>
+            <button class="add-to-cart">ADD TO CART</button>
+          </div>
+        </a>
+      </div>
+      <div class="product product-two" id="314">
+        <a href="../sweatshirts/productPage/314.html">
+          <img src="/images/sweatshirts/boss-badge_crew_sweatshirt.png" alt="" height="350" width="300">
+          <h3 class="title">BOSS Badge Crew Sweatshirt</h3>
+          <div class="lower-product">
+            <p class="price">£139.00</p>
+            <button class="add-to-cart">ADD TO CART</button>
+          </div>
+        </a>
+      </div>
+      <div class="product product-three" id="315">
+        <a href="../sweatshirts/productPage/315.html">
+          <img src="/images/sweatshirts/napapijri_bastien_1:2_zip_sweatshirt.png" alt="" height="350" width="300">
+          <h3 class="title">Napapijri Bastien 1/2 Zip Sweatshirt</h3>
+          <div class="lower-product">
+            <p class="price">£90.00</p>
+            <button class="add-to-cart">ADD TO CART</button>
+          </div>
+        </a>
+      </div>
+      <div class="product product-four" id="316">
+        <a href="../sweatshirts/productPage/316.html">
+          <img src="/images/sweatshirts/napapijri_beik_crew_sweatshirt.png" alt="" height="350" width="300">
+          <h3 class="title">Napapijri Beik Crew Sweatshirt</h3>
+          <div class="lower-product">
+            <p class="price">£80.00</p>
+            <button class="add-to-cart">ADD TO CART</button>
+          </div>
+        </a>
+      </div>    
+    </div>
+    
+    <!--Footer-->
+    <div class="footer">
+      <div class="footer-container">
+        <!--contact content-->
+        <div class="contact-container">
+          <a href="mailto: ryan-henry@hotmail.co.uk"><i data-lucide="at-sign" class="icon" id="my-email"></i></a>
+          <a href="https://www.linkedin.com/in/ryan-henry-17004a12b/"><i data-lucide="linkedin" class="icon" id="linkedin"></i></a>
+          <a href="https://github.com/RyanLH95"><i data-lucide="github" class="icon" id="github"></i></a>
+        </div>
+        <script>
+          lucide.createIcons();
+        </script>
+        <!--customer content-->
+        <div class="contain">
+          <div class="customer-care">
+            <h3>Customer Care</h3>
+            <p>Delivery and Returns</p>
+            <p>Help & Contact Us</p>
+            <p>Track My Order</p>
+          </div>
+          <div class="corporate">
+            <h3>Corporate</h3>
+            <p>Jobs</p>
+          </div>
+          <div class="legal">
+            <h3>Legal</h3>
+            <p>Terms & Conditions</p>
+            <p>Privacy & Cookies</p>
+            <p>Accessibility</p>
+            <p>Cookie Settings</p>
+            <p>Site Map</p>
+          </div>
+          <div class="guide">
+            <h3>Shopping Guide</h3>
+            <p>Students</p>
+            <p>Size Guides</p>
+            <p>Find a Store</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+
+</html>
+</main>

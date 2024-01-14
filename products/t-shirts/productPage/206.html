@@ -1,0 +1,135 @@
+<main>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/style.css" />
+    <link rel="icon" type="image/png" href="./favicon.png" />
+    <sript defer src="../app.js"></sript>
+    <!--For live refresh-->
+    <script type="text/javascript" src="https://livejs.com/live.js"></script>
+    <!--lucide js dependencies-->
+    <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.js"></script>
+    <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.js"></script>
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <!--glider js-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/glider-js@1/glider.min.css">
+    <title>E-commerce</title>
+  </head>
+  
+  <body>
+    <!-- Navigation bar-->
+    <div class="navbar">
+      <!--ecom logo-->
+      <div class="logo">
+        <span class="logoOne">E</span>
+        <span class="logoTwo">-com
+      </div>
+      <!--Nav buttons-->
+      <ul class="nav">
+        <li><a href="/index.html">Home</a></li>
+        <li><a href="/products/trainers/trainers.html">Trainers</a></li>
+        <li><a href="../t-shirts.html">T-shirts</a></li>
+        <li><a href="/products/sweatshirts/sweatshirts.html">Sweatshirts</a></li>
+        <li><a href="/products/accessories/accessories.html">Accessories</a></li>
+      </ul>
+      <!--wishlist, addToCart and Login icons-->
+      <div class="navTwo">
+        <i data-lucide="heart" class="wishlist"></i>
+        <i data-lucide="shopping-cart" class="shoppingCart"></i>
+        <p class="login"><a href="">LOGIN</a></p>
+      </div>
+      <script>
+        lucide.createIcons();
+  
+        window.onscroll = function() {myFunction()};
+  
+        var navbar = document.getElementById("navbar");
+        var sticky = navbar.offsetTop;
+  
+        function myFunction() {
+          if (window.pageYOffset >= sticky) {
+            navbar.classList.add("sticky")
+          } else {
+            navbar.classList.remove("sticky");
+          }
+        }
+      </script>
+    </div>
+
+    <!--products-->
+    <div class="trainer-products">
+    <h3 class="product-title">The North Face Gradient Box T-Shirt</h3>
+      <!--Row One of products-->
+    <div class="product-specs">
+      <div class="product-display t-shirt-display" id="206">
+        <img src="/images/t-shirts/the_north_face_gradient_box_t-shirt_grey.png" alt="" height="700" width="700">
+        <div class="t-shirt-ui">
+          <p class="desc">Refresh your tee rotation with this men's Small Arch Logo T-Shirt from Billionaire Boys Club.</p>
+          <p class="display-price">£35.00</p>
+          <div class="line-break line-break-one"></div>
+          <!--list of sizes -->
+          <div class="size">
+            <div class="first-row-size">
+              <button>XS</button>
+              <button>S</button>
+              <button>M</button>
+              <button>L</button>
+              <button>XL</button>
+            </div>
+          </div>
+          <div class="line-break line-break-two"></div>
+          <div class="int-buttons">
+            <button class="cart">ADD TO CART</button>
+            <button class="wish">ADD TO WISHLIST</button>
+          </div>
+        </div>
+      </div>  
+    </div>
+    
+    <!--Footer-->
+    <div class="footer">
+      <div class="footer-container">
+        <!--contact content-->
+        <div class="contact-container product-container">
+          <a href="mailto: ryan-henry@hotmail.co.uk"><i data-lucide="at-sign" class="icon" id="my-email"></i></a>
+          <a href="https://www.linkedin.com/in/ryan-henry-17004a12b/"><i data-lucide="linkedin" class="icon" id="linkedin"></i></a>
+          <a href="https://github.com/RyanLH95"><i data-lucide="github" class="icon" id="github"></i></a>
+        </div>
+        <script>
+          lucide.createIcons();
+        </script>
+        <!--customer content-->
+        <div class="contain">
+          <div class="customer-care">
+            <h3>Customer Care</h3>
+            <p>Delivery and Returns</p>
+            <p>Help & Contact Us</p>
+            <p>Track My Order</p>
+          </div>
+          <div class="corporate">
+            <h3>Corporate</h3>
+            <p>Jobs</p>
+          </div>
+          <div class="legal">
+            <h3>Legal</h3>
+            <p>Terms & Conditions</p>
+            <p>Privacy & Cookies</p>
+            <p>Accessibility</p>
+            <p>Cookie Settings</p>
+            <p>Site Map</p>
+          </div>
+          <div class="guide">
+            <h3>Shopping Guide</h3>
+            <p>Students</p>
+            <p>Size Guides</p>
+            <p>Find a Store</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+
+</html>
+</main>

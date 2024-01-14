@@ -1,0 +1,192 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+body {
+    align-items: flex-start;
+    background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwBAMAAAClLOS0AAAAElBMVEUAAAD8/vz08vT09vT8+vzs7uxH16TeAAAAAXRSTlMAQObYZgAAAAlwSFlzAAAOxAAADsQBlSsOGwAAAuFJREFUOI0Vk+3NLiEIRG1B8ClAYAsQ2AIEt4D9ePtv5Xp/mZgYJ2fOFJKEfInkVWY2aglmQFkimRTV7MblYyVqD7HXyhKsSuPX12MeDhRHLtGvRG+P+B/S0Vu4OswR9tmvwNPyhdCDbVayJGads/WiUWcjCvCnruTBNHS9gmX2VzVbk7ZvB1gb1hkWFGl+A/n+/FowcO34U/XvKqZ/fHY+6vgRfU92XrOBUbGeeDfQmjWjdrK+frc6FdGReQhfSF5JvR29O2QrfNw1huTwlgsyXLo0u+5So82sgv7tsFZR2nxB6lXiquHrfD8nfYZ9SeT0LiuvSoVrxGY16pCNRZKqvwWsn5OHypPBELzohMCaRaa0ceTHYqe7X/gfJEEtKFbJpWoNqO+aS1cuTykGPpK5Ga48m6L3NefTr013KqYBQu929iP1oQ/7UwSR+i3zqruUmT84qmhzLpxyj7pr9kg7LKvqaXxZmdpn+6o8sHqSqojy02gU3U8q9PnpidiaLks0mbMYz+q2uVXsoBQ8bfURULYxRgZVYCHMv9F4OA7qxT2NPPpvGQ/sTDH2yznKh7E2AcErfcNsaIoN1izzbJiaY63x4QjUFdBSvDCvugPpu5xDny0jzEeuUQbcP1aGT9V90uixngTRLYNEIIZ6yOF1H8tm7rj2JxiefsVy53zGVy3ag5uuPsdufYOzYxLRxngKe7nhx3VAq54pmz/DK9/Q3aDam2Yt3hNXB4HuU87jKNd/CKZn77Qdn5QkXPfqSkhk7hGOXXB+7v09KbBbqdvxGqa0AqfK/atIrL2WXdAgXAJ43Wtwe/aIoacXezeGPMlhDOHDbSfHnaXsL2QzbT82GRwZuezdwcoWzx5pnOnGMUdHuiY7lhdyWzWiHnucLZQxYStMJbtcydHaQ6vtMbe0AcDbxG+QG14AL94xry4297xpy9Cpf1OoxZ740gHDfrK+gtsy0xabwJmfgtCeii79B6aj0SJeLbd7AAAAAElFTkSuQmCC);
+}
+
+/* selectors for navbar div */
+.navbar {
+    padding-left: 10px;
+    background-color: rgb(255, 255, 255, 0.6);
+    backdrop-filter: blur(30px);
+    position: fixed; top: -5px; left: -5px;
+    height: 5rem;
+    width: 1445px;
+    display: flex;
+    box-shadow: 1px 1px 5px 1px rgb(106, 106, 106);
+    z-index: 99;
+}
+
+/* logo for ecom */
+.logo {
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 30px;
+    position: absolute; top: 25px; left: 30px;
+}
+
+.logoOne {
+    color: white;
+    font-weight: bold;
+    width: 50px;
+    height: 50px;
+    background-color: black;
+    padding: 5px;
+    padding-left: 10px;
+    padding-right: 10px;
+    border-radius: 10%;
+    transition: 500ms;
+    text-shadow: 0px 0px 10px;
+}
+
+.logoOne:hover {
+   transition-duration: 300ms;
+   background-color: rgb(0, 183, 255);
+   color: black;
+   text-shadow: 0px 0px 0px;
+}
+
+.logoTwo {
+    font-style: italic;
+    font-weight: bold;
+}
+
+a {
+    color: black;
+    text-decoration: none;
+}
+
+/* nav buttons */
+.nav {
+    color: black;
+    max-width: 1280px;
+    text-transform: uppercase;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: 600;
+    font-size: large;
+    list-style-type: none;
+    margin: auto;
+    width: 50%;
+    padding: 10px;
+    gap: 40px;
+    text-align: center;
+    display: flex;
+    position: relative; left: 50px;
+}
+
+.nav a {
+    color: black;
+    text-decoration: underline rgb(0, 0, 0, 0);
+    transition: 500ms, text-decoration-color 500ms; 
+    text-underline-offset: 0.2em;
+}
+
+.nav a:hover {
+    cursor: pointer;
+    color: rgb(0, 183, 255);
+    text-decoration: underline rgb(0, 183, 255);
+    text-underline-offset: 0.4em;
+    transition-duration: 300ms;
+    text-decoration-color: rgb(0, 183, 255);
+}
+
+/* wishlist and cart buttons */
+.navTwo {
+    position: absolute; top: -5.7px; left: 1300px;
+}
+
+.wishlist {
+    height: 30px;
+    width: 30px;
+    position: relative; top: 30px; left: -60px;
+}
+
+.shoppingCart {
+    height: 30px;
+    width: 30px;
+    position: relative; top: 30px; left: -40px;
+}
+
+.login {
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: bold;
+    font-size: large;
+    position: relative; top: -17px; left: 50px;
+}
+
+.login a {
+    color: black;
+    text-decoration: underline rgb(0, 0, 0, 0);
+    transition: 500ms, text-decoration-color 500ms; 
+    text-underline-offset: 0.2em;
+}
+
+.login a:hover {
+    cursor: pointer;
+    color: rgb(0, 183, 255);
+    text-decoration: underline rgb(0, 183, 255);
+    text-underline-offset: 0.4em;
+    transition-duration: 300ms;
+    text-decoration-color: rgb(0, 183, 255);
+}
+
+
+/* footer of ecom */
+.footer {
+    border-top: 2px solid rgba(217, 217, 217, 0.6);
+    background-color: rgb(255, 255, 255, 0.6);
+    margin-right: -40px;
+    backdrop-filter: blur(30px);
+    height: 250px;
+    width: 1440px;
+    position: relative; top: px; left: -8px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.footer-container {
+    gap: 50px;
+    display: flex;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    position: relative; top: 0px; left: 0px;
+}
+
+.contact-container {
+    gap: 23.5px;
+    display: flex;
+    flex-direction: column;
+    position: relative; top: 15px;
+}
+
+.icon {
+    color: white;
+    border-radius: 6px;
+    padding: 6px;
+    height: 35px;
+    width: 35px;
+    box-shadow: 1px 1px 5px 1px rgba(137, 137, 137, 0.6);;
+}
+
+#my-email {
+    background-color: #800000;
+}
+
+#linkedin {
+    fill: white;
+    background-color: #0072b1;
+}
+
+#github {
+    fill: white;
+    background-color: #000000;
+}
+
+.contain {
+    display: flex;
+    gap: 150px;
+    position: relative; left: 200px;
+}

@@ -1,0 +1,564 @@
+/* background of E-commerce site */
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+body {
+    align-items: flex-start;
+    background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwBAMAAAClLOS0AAAAElBMVEUAAAD8/vz08vT09vT8+vzs7uxH16TeAAAAAXRSTlMAQObYZgAAAAlwSFlzAAAOxAAADsQBlSsOGwAAAuFJREFUOI0Vk+3NLiEIRG1B8ClAYAsQ2AIEt4D9ePtv5Xp/mZgYJ2fOFJKEfInkVWY2aglmQFkimRTV7MblYyVqD7HXyhKsSuPX12MeDhRHLtGvRG+P+B/S0Vu4OswR9tmvwNPyhdCDbVayJGads/WiUWcjCvCnruTBNHS9gmX2VzVbk7ZvB1gb1hkWFGl+A/n+/FowcO34U/XvKqZ/fHY+6vgRfU92XrOBUbGeeDfQmjWjdrK+frc6FdGReQhfSF5JvR29O2QrfNw1huTwlgsyXLo0u+5So82sgv7tsFZR2nxB6lXiquHrfD8nfYZ9SeT0LiuvSoVrxGY16pCNRZKqvwWsn5OHypPBELzohMCaRaa0ceTHYqe7X/gfJEEtKFbJpWoNqO+aS1cuTykGPpK5Ga48m6L3NefTr013KqYBQu929iP1oQ/7UwSR+i3zqruUmT84qmhzLpxyj7pr9kg7LKvqaXxZmdpn+6o8sHqSqojy02gU3U8q9PnpidiaLks0mbMYz+q2uVXsoBQ8bfURULYxRgZVYCHMv9F4OA7qxT2NPPpvGQ/sTDH2yznKh7E2AcErfcNsaIoN1izzbJiaY63x4QjUFdBSvDCvugPpu5xDny0jzEeuUQbcP1aGT9V90uixngTRLYNEIIZ6yOF1H8tm7rj2JxiefsVy53zGVy3ag5uuPsdufYOzYxLRxngKe7nhx3VAq54pmz/DK9/Q3aDam2Yt3hNXB4HuU87jKNd/CKZn77Qdn5QkXPfqSkhk7hGOXXB+7v09KbBbqdvxGqa0AqfK/atIrL2WXdAgXAJ43Wtwe/aIoacXezeGPMlhDOHDbSfHnaXsL2QzbT82GRwZuezdwcoWzx5pnOnGMUdHuiY7lhdyWzWiHnucLZQxYStMJbtcydHaQ6vtMbe0AcDbxG+QG14AL94xry4297xpy9Cpf1OoxZ740gHDfrK+gtsy0xabwJmfgtCeii79B6aj0SJeLbd7AAAAAElFTkSuQmCC);
+}
+
+/* selectors for navbar div */
+.navbar {
+    padding-left: 10px;
+    background-color: rgb(255, 255, 255, 0.6);
+    backdrop-filter: blur(30px);
+    position: fixed; top: -5px; left: -5px;
+    height: 5rem;
+    width: 1445px;
+    display: flex;
+    box-shadow: 1px 1px 5px 1px rgb(106, 106, 106);
+    z-index: 99;
+}
+
+/* logo for ecom */
+.logo {
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 30px;
+    position: absolute; top: 25px; left: 30px;
+}
+
+.logoOne {
+    color: white;
+    font-weight: bold;
+    width: 50px;
+    height: 50px;
+    background-color: black;
+    padding: 5px;
+    padding-left: 10px;
+    padding-right: 10px;
+    border-radius: 10%;
+    transition: 500ms;
+    text-shadow: 0px 0px 10px;
+}
+
+.logoOne:hover {
+   transition-duration: 300ms;
+   background-color: rgb(0, 183, 255);
+   color: black;
+   text-shadow: 0px 0px 0px;
+}
+
+.logoTwo {
+    font-style: italic;
+    font-weight: bold;
+}
+
+a {
+    color: black;
+    text-decoration: none;
+}
+
+/* nav buttons */
+.nav {
+    color: black;
+    max-width: 1280px;
+    text-transform: uppercase;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: 600;
+    font-size: large;
+    list-style-type: none;
+    margin: auto;
+    width: 50%;
+    padding: 10px;
+    gap: 40px;
+    text-align: center;
+    display: flex;
+    position: relative; left: 50px;
+}
+
+.nav a {
+    color: black;
+    text-decoration: underline rgb(0, 0, 0, 0);
+    transition: 500ms, text-decoration-color 500ms; 
+    text-underline-offset: 0.2em;
+}
+
+.nav a:hover {
+    cursor: pointer;
+    color: rgb(0, 183, 255);
+    text-decoration: underline rgb(0, 183, 255);
+    text-underline-offset: 0.4em;
+    transition-duration: 300ms;
+    text-decoration-color: rgb(0, 183, 255);
+}
+
+/*For index.html file ONLY */
+#current-page {
+    cursor: pointer;
+    color: rgb(0, 183, 255);
+    text-decoration: underline rgb(0, 183, 255);
+    text-underline-offset: 0.4em;
+    text-decoration-color: rgb(0, 183, 255);
+}
+
+/* wishlist and cart buttons */
+.navTwo {
+    position: absolute; top: -5.7px; left: 1300px;
+}
+
+.wishlist {
+    height: 30px;
+    width: 30px;
+    position: relative; top: 30px; left: -60px;
+}
+
+.shoppingCart {
+    height: 30px;
+    width: 30px;
+    position: relative; top: 30px; left: -40px;
+}
+
+.login {
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: bold;
+    font-size: large;
+    position: relative; top: -17px; left: 50px;
+}
+
+.login a {
+    color: black;
+    text-decoration: underline rgb(0, 0, 0, 0);
+    transition: 500ms, text-decoration-color 500ms; 
+    text-underline-offset: 0.2em;
+}
+
+.login a:hover {
+    cursor: pointer;
+    color: rgb(0, 183, 255);
+    text-decoration: underline rgb(0, 183, 255);
+    text-underline-offset: 0.4em;
+    transition-duration: 300ms;
+    text-decoration-color: rgb(0, 183, 255);
+}
+
+/* banner for ecom */
+.banner::before::after {
+    box-sizing: border-box;
+}
+
+.banner {
+    position: absolute; top: 75px; left: 0px;
+}
+
+.glider {
+    width: 1440px;
+}
+
+.slider-one {
+    position: relative; left: 0px;
+}
+
+.slider-two {
+    position: relative; left: 0px;
+}
+
+.slider-three {
+    position: relative; left: 0px;
+}
+
+.banner-title {
+    color: white;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    position: relative; top: -700px; left: -352px;
+    text-align: center;
+    font-size: 30px;
+}
+
+#dots {
+    position: relative; top: -400px; left: -380px;
+    z-index: 1;
+}
+
+/* contact us banner */
+.contact-banner {
+    background-color: white;
+    border-radius: 5px;
+    height: 80px;
+    width: 1200px;
+    position: absolute; top: 650px; left: 115px;
+    box-shadow: 2px 5px 10px 0px rgb(106, 106, 106);
+}
+
+.contacts {
+    display: flex;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: black;
+    font-weight: bold;
+    gap: 100px;
+    position: relative; top: 0px; left: 100px;
+}
+
+/* time open */
+.time {
+    display: flex;
+    position: relative; top: 0px; left: 50px;
+}
+
+.clock {
+    height: 35px;
+    width: 35px;
+    color: rgb(0, 183, 255);
+    z-index: 4;
+    position: relative; top: 25px; left: -10px;
+}
+
+/* contact details */
+.contact {
+    display: flex;
+    position: relative; top: 0px; left: 50px;
+}
+
+.phone {
+    height: 35px;
+    width: 35px;
+    color: rgb(0, 183, 255);
+    z-index: 4;
+    position: relative; top: 25px; left: -10px;
+}
+
+/* location */
+.location {
+    display: flex;
+    position: relative; top: 18px; left: 50px;
+}
+
+.map {
+    height: 35px;
+    width: 35px;
+    color: rgb(0, 183, 255);
+    z-index: 4;
+    position: relative; top: 5px; left: -10px;
+}
+
+.email-contact {
+    display: flex;
+    position: relative; top: 0px; left: 50px;
+}
+
+.email {
+    height: 35px;
+    width: 35px;
+    color: rgb(0, 183, 255);
+    z-index: 4;
+    position: relative; top: 25px; left: -10px;
+}
+
+/* featured products div */
+.products {
+    position: absolute; top: 800px; left: 40px;
+}
+
+.product-title {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 32px;
+    text-align: center;
+}
+
+/* row of products */
+.rowOne {
+    display: flex;
+    gap: 20px;
+}
+
+.rowTwo {
+    padding-top: 20px;
+    display: flex;
+    gap: 20px;
+}
+
+.rowThree {
+    padding-top: 20px;
+    display: flex;
+    gap: 20px;
+}
+
+/* for individual products ONLY e.g. trainers, sweatshirts etc */
+.rowFour {
+    padding-top: 20px;
+    display: flex;
+    gap: 20px;
+}
+
+.product {
+    background-color: white;
+    overflow: hidden;
+    border: 1px solid;
+    border-color: rgb(228 228 231);
+    border-radius: 10px;
+    padding: 10px;
+    transition-duration: 300ms;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.product img {
+    border-radius: 5px;
+}
+
+.product:hover {
+    border-color: rgb(113 113 122);
+    transition-duration: 300ms;
+    transform: scale(1.05);
+    box-shadow: 0 20px 25px -5px rgb(0 0 0 / 0.1), 
+                0 8px 10px -6px rgb(0 0 0 / 0.1);
+}
+
+.title {
+    text-align: center;
+}
+
+.lower-product {
+    margin: 10px;
+    padding-bottom: 40px;
+    position: relative; top: 40px;
+}
+
+.price {
+    font-size: large;
+    font-weight: bold;
+    position: relative; left: 5px; 
+}
+
+.add-to-cart {
+    font-size: large;
+    font-weight: bold;
+    background: none;
+    border: none;
+    color: black;
+    transition: 300ms;
+}
+
+.add-to-cart:hover {
+    cursor: pointer;
+    color: rgb(0, 183, 255);
+    transition-duration: 300ms;
+}
+
+/* footer of ecom */
+.footer {
+    border-top: 2px solid rgba(217, 217, 217, 0.6);
+    background-color: rgb(255, 255, 255, 0.6);
+    margin-right: -40px;
+    backdrop-filter: blur(30px);
+    height: 250px;
+    width: 1440px;
+    position: relative; top: 100px; left: -40px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.footer-container {
+    gap: 50px;
+    display: flex;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    position: relative; top: 0px;
+}
+
+.contact-container {
+    gap: 20px;
+    display: flex;
+    flex-direction: column;
+    position: relative; top: 15px;
+}
+
+/* for product page ONLY */
+.product-container {
+    gap: 23.5px;
+}
+
+.icon {
+    color: white;
+    border-radius: 6px;
+    padding: 6px;
+    height: 35px;
+    width: 35px;
+    box-shadow: 1px 1px 5px 1px rgba(137, 137, 137, 0.6);;
+}
+
+#my-email {
+    background-color: #800000;
+}
+
+#linkedin {
+    fill: white;
+    background-color: #0072b1;
+}
+
+#github {
+    fill: white;
+    background-color: #000000;
+}
+
+.contain {
+    display: flex;
+    gap: 150px;
+    position: relative; left: 200px;
+}
+
+/* trainer products ONLY */
+.trainer-products { position: absolute; top: 100px; left: 40px; }
+
+/* t-shirt products ONLY */
+.t-shirt-products { position: absolute; top: 100px; left: 40px; }
+
+/* t-shirt products ONLY */
+.sweatshirt-products { position: absolute; top: 100px; left: 40px; }
+
+/* accessories products ONLY */
+.accessories-products { position: absolute; top: 100px; left: 40px; }
+
+
+/* Designs for Product Page ONLY */
+
+/* product image */
+.product-display {
+    gap: 20px;
+    display: flex;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: larger;
+    text-align: left;
+    position: relative; top: 20px; 
+}
+
+/* For t-shirts ONLY */
+.t-shirt-display {
+    margin-right: 180px;
+    position: relative; left: 50px; 
+}
+
+.t-shirt-ui {
+    position: relative; top: -27px; 
+}
+
+/* For accesories ONLY */
+.accessories-display {
+    margin-right: 180px;
+    position: relative; left: 50px; 
+}
+
+/* product info/interface */
+.product-ui {
+    margin-right: 180px;
+    position: relative; top: -20px; 
+}
+
+.desc {
+    font-size: larger;
+    position: relative; left: 50px; 
+}
+
+.display-price {
+    font-size: larger;
+    font-weight: bold;
+    position: relative; left: 50px; 
+}
+
+.line-break {
+    height: 2px;
+    width: 500px;
+    background-color: rgba(217, 217, 217, 0.6);
+    position: relative; top: 20px; left: 50px;
+}
+
+.line-break-one {
+    position: relative; top: 20px; left: 50px;
+}
+
+.line-break-two {
+    position: relative; top: 70px; left: 50px;
+}
+
+/* size selections */
+.size {
+    display: block;
+    position: relative; top: 40px; left: 130px;
+}
+
+.size button {
+    border: 2px solid rgba(217, 217, 217, 0.6);
+    height: 50px;
+    width: 60px;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: large;
+    font-weight: bold;
+    transition: 500ms, text-decoration-color 500ms; 
+}
+
+.size button:hover {
+    background-color: rgba(156, 156, 156, 0.6);
+}
+
+/* for accessories ONLY */
+.accessories-size {
+    margin-right: 210px;
+    position: relative; left: 235px;
+}
+
+.accessories-size button {
+    width: 100px;
+}
+
+.second-row-size {
+    position: relative; top: 5px;
+}
+
+/* interface buttons */
+.int-buttons {
+    display: block;
+    position: relative; top: 90px; left: 90px;
+}
+
+.int-buttons button {
+    font-weight: bold;
+    border-radius: 8px;
+}
+
+.cart {
+    border: none;
+    background:rgb(0, 183, 255);
+    color: white;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    width: 400px;
+    transition: 500ms, text-decoration-color 500ms; 
+}
+
+.cart:hover {
+    background:rgb(0, 144, 201);
+    transition-duration: 300ms;
+}
+
+.wish {
+    border: none;
+    background: rgba(217, 217, 217, 0.6);
+    padding-top: 10px;
+    padding-bottom: 10px;
+    width: 400px;
+    position: relative; top: 10px;
+    transition: 500ms, text-decoration-color 500ms; 
+}
+
+.wish:hover {
+    background: rgba(147, 147, 147, 0.6);
+    transition-duration: 300ms;
+}
+
+
+
+
+
+
+
+
